@@ -1,0 +1,2 @@
+theta_ransac = np.degrees(np.arctan(m_ransac))
+print(theta_ransac)
