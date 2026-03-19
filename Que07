@@ -1,0 +1,2 @@
+theta_tls = np.degrees(np.arctan(dy/dx))
+print(theta_tls)
