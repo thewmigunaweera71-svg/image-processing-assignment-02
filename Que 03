@@ -1,0 +1,8 @@
+m, c = np.polyfit(x, y, 1)
+y_fit = m * x + c
+
+plt.scatter(x, y, s=1)
+plt.plot(x, y_fit, color='red')
+plt.gca().invert_yaxis()
+plt.title("Least Squares Fit")
+plt.show()
