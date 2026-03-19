@@ -1,0 +1,2 @@
+theta = np.degrees(np.arctan(m))
+print(theta)
