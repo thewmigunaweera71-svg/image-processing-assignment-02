@@ -1,0 +1,17 @@
+points = np.column_stack((x, y))
+mean = np.mean(points, axis=0)
+centered = points - mean
+
+U, S, Vt = np.linalg.svd(centered)
+direction = Vt[0]
+
+dx, dy = direction
+
+t = np.linspace(-1000, 1000, 100)
+line_x = mean[0] + t * dx
+line_y = mean[1] + t * dy
+
+plt.scatter(x, y, s=1)
+plt.plot(line_x, line_y, color='green')
+plt.gca().invert_yaxis()
+plt.show()
