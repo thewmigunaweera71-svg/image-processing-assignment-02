@@ -1,0 +1,5 @@
+edges = cv.Canny(gray, 550, 690)
+
+plt.imshow(edges, cmap='gray')
+plt.title("Edge Image")
+plt.axis('off')
